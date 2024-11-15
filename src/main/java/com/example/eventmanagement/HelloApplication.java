@@ -17,17 +17,23 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-        launch();
     }
 
     public static void initialize(){
         try {
-            ArrayList<String> data = FileManager.readFile("hola.txt");
+            ArrayList<String> data = FileManager.readFile("Users.txt");
             for (String user : data) {
                 String[] parts = user.split(" ");
                 User.users.add(new User(Integer.valueOf(parts[0]), parts[1], parts[2]));;
             }
         } catch (Exception e) {
         }
+    }
+    public static void main (String[] args){
+        initialize();
+
+        NewsAgency.litseners.add(new Observer("main"));
+
+        launch();
     }
 }

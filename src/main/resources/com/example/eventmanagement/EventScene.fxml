@@ -8,6 +8,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+
 <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eventmanagement.HelloController">
    <children>
       <GridPane prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #2f3640;">
@@ -22,33 +23,38 @@
           <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
-               <children>
-                  <Button fx:id="Profilbtn" mnemonicParsing="false" onAction="#profile" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #353b48;" text="Profil" textFill="WHITE" />
-               </children>
-            </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
-               <children>
-                  <Button fx:id="Eventbtn" mnemonicParsing="false" onAction="#event" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #353b48;" text="Events" textFill="WHITE" />
-               </children>
-            </VBox>
-            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
-               <children>
-                  <Button fx:id="Adminbtn" mnemonicParsing="false" onAction="#admin" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #353b48;" text="Admin" textFill="WHITE" />
-               </children>
-            </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1">
                <children>
-                  <Label text="Event manager" textFill="#4cd137">
+                  <Label text="Events" textFill="#4cd137">
                      <font>
-                        <Font size="45.0" />
+                        <Font size="50.0" />
                      </font>
                   </Label>
                </children>
             </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="Koncertbtn" mnemonicParsing="false" onAction="#koncert" style="-fx-background-color: #353b48;" text="Koncert" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="Konferencebtn" mnemonicParsing="false" onAction="#konference" style="-fx-background-color: #353b48;" text="Konference" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <children>
+                  <Button fx:id="Workshopbtn" mnemonicParsing="false" onAction="#workshop" style="-fx-background-color: #353b48;" text="Workshop" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <children>
+                  <Button fx:id="MainMenubtn" mnemonicParsing="false" onAction="#mainMenu" style="-fx-background-color: #353b48;" text="Main menu" textFill="WHITE" />
+               </children>
+            </VBox>
             <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2">
                <children>
-                  <Label fx:id="newsLabel" />
+                  <Label fx:id="newsLabel" textFill="WHITE" />
                </children>
             </VBox>
          </children>
