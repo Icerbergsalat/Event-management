@@ -24,7 +24,7 @@ public class HelloApplication extends Application {
             ArrayList<String> data = FileManager.readFile("Users.txt");
             for (String user : data) {
                 String[] parts = user.split(" ");
-                User.users.add(new User(Integer.valueOf(parts[0]), parts[1], parts[2]));;
+                UserManager.getInstance().users.add(new User(Integer.valueOf(parts[0]), parts[1], parts[2]));
             }
         } catch (Exception e) {
         }

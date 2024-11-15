@@ -3,7 +3,6 @@ package com.example.eventmanagement;
 import java.util.ArrayList;
 
 public class User {
-    public static ArrayList<User> users = new ArrayList<>();
     private int id;
     private String username;
     private String password;
