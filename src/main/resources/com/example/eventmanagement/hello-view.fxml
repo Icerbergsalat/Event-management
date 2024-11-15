@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="1000.0" style="-fx-background-color: #2f3640;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.eventmanagement.HelloController">
+    <children>
+        <Label text="login" textFill="#4cd137">
+            <font>
+                <Font size="44.0" />
+            </font>
+        </Label>
+        <VBox prefHeight="0.0" prefWidth="1000.0">
+            <children>
+                <Label text="Username" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <TextField fx:id="username" prefHeight="0.0" prefWidth="1000.0" style="-fx-background-color: #353b48; -fx-text-fill: #eeeeee;">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </TextField>
+            </children>
+            <padding>
+                <Insets left="200.0" right="200.0" top="25.0" />
+            </padding>
+        </VBox>
+        <VBox prefHeight="0.0" prefWidth="800.0">
+            <children>
+                <Label text="Password" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </Label>
+                <PasswordField fx:id="password" style="-fx-background-color: #353b48; -fx-text-fill: #eeeeee;" />
+            </children>
+            <VBox.margin>
+                <Insets />
+            </VBox.margin>
+            <padding>
+                <Insets left="200.0" right="200.0" top="25.0" />
+            </padding>
+        </VBox>
+        <Button fx:id="loginbtn" mnemonicParsing="false" onAction="#checkLogin" style="-fx-background-color: #353b48;" text="Login" textFill="WHITE">
+            <VBox.margin>
+                <Insets top="25.0" />
+            </VBox.margin>
+        </Button>
+    </children>
+</VBox>
