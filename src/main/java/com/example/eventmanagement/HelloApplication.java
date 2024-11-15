@@ -17,12 +17,9 @@ public class HelloApplication extends Application {
         stage.setScene(scene);
         stage.setResizable(false);
         stage.show();
-    }
-
-    public void changeScene(){
-        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("evnet-manager.fxml"));
         launch();
     }
+
     public static void initialize(){
         try {
             ArrayList<String> data = FileManager.readFile("hola.txt");
